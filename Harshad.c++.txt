@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+typedef long long km;
+using namespace std;
+    
+    int main()  
+    {  
+        km n,s=0;  
+        cin>>n;
+        int mk=n;   
+        while(n>0)
+        {  
+            int rem=n%10;  
+            s+=rem;  
+            n/=10;  
+        }      
+        if(mk%s==0)  
+            cout<<"Yes";  
+        else  
+            cout<<"No";  
+        return 0;  
+        }
